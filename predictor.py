@@ -81,20 +81,20 @@ if choice=='Year':
     y = st.number_input('Select Year',min_value=1970,step=1) - year
     a = np.expm1(un_stand['year'] * y) * 100 
     if a < 0:
-        st.text(f'The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
     
     else :
-        st.text(f'The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
         
         
 elif choice=='Km travelled':
     y = st.number_input('Select Km Travelled',min_value=0,step=1) - km
     a = np.expm1(un_stand['Km_travelled'] * y) * 100 
     if a < 0:
-        st.text(f'The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
     
     else :
-        st.text(f'The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
         
         
         
@@ -102,10 +102,10 @@ elif choice=='Engine':
     y = st.number_input('Select Engine in (cc)',min_value=0,step=1) - engine
     a = np.expm1(un_stand['engine'] * y) * 100 
     if a < 0:
-        st.text(f'The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
     
     else :
-        st.text(f'The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
         
             
 
@@ -116,10 +116,10 @@ elif choice=='Body Type':
     a = np.expm1(un_stand[f'body_type_{y}'] - un_stand[f'body_type_{body}']) * 100 
     
     if a < 0:
-        st.text(f'The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
     
     else :
-        st.text(f'The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
         
         
 else:
@@ -128,7 +128,7 @@ else:
     a = np.expm1(un_stand[f'company_{y}'] - un_stand[f'company_{company}']) * 100 
     
     if a < 0:
-        st.text(f'The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would decrease by {round(abs(a),2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
     
     else :
-        st.text(f'The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}')
+        st.text(f"The price would increase by {round(a,2)}% , The new approx price would be {round(st.session_state['price'] + st.session_state['price'] * (a/100),2)}")
