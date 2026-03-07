@@ -5,3 +5,4 @@ numpy==2.0.2
 matplotlib
 seaborn
 altair
+plotly==5.18.0
