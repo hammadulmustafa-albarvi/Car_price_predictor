@@ -73,9 +73,7 @@ streamlit run app.py
 - Regression-based model for price prediction  
 - Trained on cleaned dataset  
 - Optimized for reasonable accuracy  
-
-> *(Tip: Add R² score, MAE, RMSE here if available)*
-
+- MAE -> 0.6
 ---
 
 ## 📁 Project Structure
